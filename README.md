@@ -1,5 +1,5 @@
 # CAS_RPM_2017
-# These are the install instructons for CAS RPM Workshop 6 - Advanced Predictive Modelling
+# These are the install instructions for CAS RPM Workshop 6 - Advanced Predictive Modelling
 
 ## System Requirements
     - You will need a laptop with R version 3.3.3 (2017-03-06)
