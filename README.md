@@ -32,7 +32,7 @@ localH2O = h2o.init(ip = 'localhost', port = 54321, max_mem_size = '4g',nthreads
 h2o.clusterStatus()
 h2o.shutdown(prompt = FALSE) 
                
-# Download Spark-Download version 2.0.0 and remember the PATH
+# Download Spark version 2.0.0 and remember the PATH
 http://spark.apache.org/downloads.html
     
 # Set your SPARK PATH
