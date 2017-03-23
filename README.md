@@ -5,7 +5,7 @@
     - You will need a laptop with R version 3.3.3 (2017-03-06)
     - You will need atleast 4G of Memory(RAM). Preferably 8G.
     - You will need to install the packages below and initialize with the library function. 
-### Install Path
+### Install Steps
      -The following two commands remove any previously installed H2O packages for R.
      -Next, we download packages that H2O depends on. 
      -Now we download, install, and initialize the H2O package for R. 
