@@ -2,13 +2,13 @@ install.packages("drat", repos="https://cran.rstudio.com")
 drat:::addRepo("dmlc")
 install.packages("mxnet")
 
-
+library("mxnet")
 ############################################################################
 ### Simple Neural Network : MNIST
 ############################################################################
 
-train <- read_csv("C:/Users/prash/Google Drive/CAS/Deep_Learning_NeuralNets/Data/MNIST/train.csv")
-test<- read_csv("C:/Users/prash/Google Drive/CAS/Deep_Learning_NeuralNets/Data/MNIST/test.csv")
+train <- read_csv("C:/Users/pde/Google Drive/CAS/Deep_Learning_NeuralNets/Data/MNIST/train.csv")
+test<- read_csv("C:/Users/pde/Google Drive/CAS/Deep_Learning_NeuralNets/Data/MNIST/test.csv")
 head(train)
 
 train <- data.matrix(train)
@@ -55,7 +55,7 @@ outcome <- data.frame(ImageId=1:ncol(test), Label=pred.label)
 ############################################################################
 ### Deep Neural Network : Image classification LeNet
 ############################################################################
-data<-Train
+data<-train
 # input
 data <- mx.symbol.Variable('data')
 # first conv
