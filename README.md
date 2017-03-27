@@ -69,6 +69,7 @@ install.packages("dbscan");install.packages("igraph")
 install.packages("sna");install.packages("GGally");install.packages("statnet")
 
 install.packages("drat", repos="https://cran.rstudio.com")
+
 drat:::addRepo("dmlc")
 
 install.packages("mxnet")
