@@ -11,6 +11,7 @@
      -Now we download, install, and initialize the H2O package for R. 
      -In this case we are using rel-tverberg 2 (3.10.3.2).
 if ("package:h2o" %in% search()) { detach("package:h2o", unload=TRUE) }
+
 if ("h2o" %in% rownames(installed.packages())) { remove.packages("h2o") }
 pkgs <- c("methods","statmod","stats","graphics","RCurl","jsonlite","tools","utils")
 for (pkg in pkgs) {
@@ -18,7 +19,9 @@ for (pkg in pkgs) {
 }
      
 install.packages("h2o", type="source", repos=(c("http://h2o-release.s3.amazonaws.com/h2o/rel-tverberg/2/R")))
+
 install.packages("sparklyr")
+
 install.packages("rsparkling")
 
         - Initialize Libraries
@@ -29,7 +32,9 @@ library(dplyr)
 
        -Test connection and then shutdown for now. Once this is done, comment the shutdown statement.
 localH2O = h2o.init(ip = 'localhost', port = 54321, max_mem_size = '4g',nthreads=-1)
+
 h2o.clusterStatus()
+
 h2o.shutdown(prompt = FALSE) 
                
 # Download Spark version 2.0.0 and remember the PATH
@@ -38,8 +43,11 @@ http://spark.apache.org/downloads.html
 # Set your SPARK PATH
         Make sure you configure the version you have downloaded. Here is my example.
 spark_available_versions()
+
 Sys.setenv(SPARK_HOME="D:/spark-2.0.0-bin-hadoop2.7/spark-2.0.0-bin-hadoop2.7") 
+
 options(rsparkling.sparklingwater.version = "2.0.5") 
+
 spark_install(version = "2.0.0") 
 
 # Check your connection
