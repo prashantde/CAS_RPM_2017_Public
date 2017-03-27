@@ -55,12 +55,17 @@ spark_log(sc, n = 100)
 
 # Install Other Packages
 
-install.packages("class");install.packages("RANN");install.packages("nng");install.packages("FastKNN");install.packages("FNN")#install.packages("dbscan");install.packages("igraph");
+install.packages("class");install.packages("RANN");install.packages("nng");install.packages("FastKNN");install.packages("FNN")
+install.packages("dbscan");install.packages("igraph")
+
 install.packages("sna");install.packages("GGally");install.packages("statnet")
+
 install.packages("drat", repos="https://cran.rstudio.com")
 drat:::addRepo("dmlc")
 install.packages("mxnet")
+
 install.packages("ElemStatLearn")
+
 install.packages("HighDimOut")
 
 install.packages("class");install.packages("RANN");install.packages("nng");install.packages("FastKNN");install.packages("FNN")
