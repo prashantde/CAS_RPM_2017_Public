@@ -3,7 +3,11 @@
 #install.packages("sna");install.packages("GGally");install.packages("statnet")
 
 
-library(class);library(RANN);library(FastKNN);library(FNN);library(dbscan);library(igraph);library(sna);library(GGally);library(statnet)
+library(class);
+library(RANN);library(FastKNN);
+library(FNN);library(dbscan);library(igraph);
+library(sna);library(GGally);
+#library(statnet)
 #install.packages("tidyverse")
 ###################################################################################################################
 #### KNN Data #####################################################################################################
@@ -28,8 +32,8 @@ D<-scale(D, center = FALSE, scale = TRUE)
 ### Edge List
 
 #arrhythmia <-as.matrix(arrhythmia)
-
-D<-kNN(D, k=K, search="dist",sort=TRUE) ##Option 1 ;
+D
+D<-kNN(D, k=10, search="dist",sort=TRUE) ##Option 1 ;
 kNNdistplot(wine[,-1], k=K)
 
 #D<-knn.dist(data = D, k=K, algorithm=c("kd_tree")) ##Option 2
