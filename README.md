@@ -63,12 +63,14 @@ install.packages("mxnet")
 install.packages("ElemStatLearn")
 install.packages("HighDimOut")
 
-library(readr)
-library("ElemStatLearn")
-library(readr)
-library(HighDimOut)
-library(mxnet)
+install.packages("class");install.packages("RANN");install.packages("nng");install.packages("FastKNN");install.packages("FNN")
+install.packages("dbscan");install.packages("igraph")
+install.packages("sna");install.packages("GGally");install.packages("statnet")
+install.packages("tidyverse")
+
+
 library(class);library(RANN);library(FastKNN);library(FNN);library(dbscan);library(igraph);library(sna);library(GGally);library(statnet)
+library(readr);library(ggplot2)
 
 
 # Ready to go. Check h2o instance is running. 
