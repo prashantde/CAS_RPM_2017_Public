@@ -26,8 +26,11 @@ install.packages("rsparkling")
 
         - Initialize Libraries
 library(h2o)
+
 library(rsparkling)
+
 library(sparklyr)
+
 library(dplyr)
 
        -Test connection and then shutdown for now. Once this is done, comment the shutdown statement.
