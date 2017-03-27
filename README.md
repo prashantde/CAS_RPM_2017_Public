@@ -84,7 +84,7 @@ install.packages("HighDimOut")
 install.packages("class");install.packages("RANN");install.packages("nng");install.packages("FastKNN");install.packages("FNN")
 install.packages("dbscan");install.packages("igraph")
 install.packages("sna");install.packages("GGally");install.packages("statnet")
-install.packages("tidyverse")
+;install.packages("tidyverse")
 
 
 library(class);library(RANN);library(FastKNN);library(FNN);library(dbscan);library(igraph);library(sna);library(GGally);library(statnet)
