@@ -3,11 +3,15 @@
 #install.packages("sna");install.packages("GGally");install.packages("statnet")
 
 
-library(class);library(RANN);library(FastKNN);library(FNN);library(dbscan);library(igraph);library(sna);library(GGally);library(statnet)
-#install.packages("tidyverse")
 
+library(class);
+library(RANN);library(FastKNN);
+library(FNN);library(dbscan);library(igraph);
+library(sna);library(GGally);
+#library(statnet)
+#install.packages("tidyverse")
 ###################################################################################################################
-#### KNN Data #####################################################################################################
+#### LOF Data #####################################################################################################
 ###################################################################################################################
 
 
