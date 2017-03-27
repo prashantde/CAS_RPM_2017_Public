@@ -74,8 +74,8 @@ prostate_test.hex<-as.h2o(prostate_test, destination_frame="prostate_test.hex")
 model = h2o.deeplearning(
   x = 1:8,
   training_frame = prostate_train.hex,
-  hidden = c(40, 20, 10, 2,10, 20, 40 ),
-  epochs = 300,
+  hidden = c(60, 30, 10, 2,10, 30, 60 ),
+  epochs = 600,
   activation = 'Tanh',
   autoencoder = TRUE
 )
